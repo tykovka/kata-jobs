@@ -114,7 +114,8 @@ app.get('/api/jobs/:id', (req, res) => {
       skills: job.skills,
       short_description: job.short_description,
       description: job.description,
-      space: job.space
+      space: job.space,
+      about_company: job.about_company
     }
   });
 });
