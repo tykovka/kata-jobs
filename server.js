@@ -73,7 +73,8 @@ app.get('/api/jobs', (req, res) => {
     published_at: job.published_at,
     short_description: job.short_description,
     space: job.space,
-    skills: job.skills
+    skills: job.skills,
+    experience: job.experience
   }));
   
   res.json({
@@ -115,7 +116,8 @@ app.get('/api/jobs/:id', (req, res) => {
       short_description: job.short_description,
       description: job.description,
       space: job.space,
-      about_company: job.about_company
+      about_company: job.about_company,
+      experience: job.experience
     }
   });
 });
